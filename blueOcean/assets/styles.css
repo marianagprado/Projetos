@@ -1,0 +1,196 @@
+body {
+  height: 100vh;
+  background-color: #ccf5ff;
+  position: relative;
+}
+.title {
+  font-family: "Spicy Rice", serif;
+}
+.main-container {
+  padding: 5rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  color: black;
+  border: black;
+  background-color: #6bb4d1;
+}
+.btn:active,
+.btn:hover {
+  background-color: black !important;
+}
+.active-button {
+  background-color: black;
+  color: white;
+}
+.navbar {
+  background-color: #ccf5ff !important;
+  width: 100%;
+}
+.navbar-toggler {
+  border: none;
+  font-size: 90%;
+  padding: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.filter-card {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  text-align: right;
+}
+.hidden {
+  display: none;
+}
+footer {
+  width: 100%;
+  height: fit-content;
+  background-color: #6bb4d1;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #073468;
+  text-decoration: none;
+}
+.img-return {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+.result {
+  gap: 1rem;
+}
+h4 {
+  margin-block-end: 1rem;
+}
+.title-result {
+  color: #073468;
+  margin-block-end: 2rem;
+}
+.p {
+  margin: 10px;
+}
+.return-notfound {
+  text-align: center;
+  margin-block-end: 10%;
+}
+.img-notfound {
+  margin-block-end: 1rem;
+}
+.invalid {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+.input-error {
+  border: 1px solid red;
+}
+.button-map {
+  background-color: #ccf5ff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+#map {
+  display: none;
+  width: 100%;
+  height: 350px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+.location{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.filter-card {
+  gap: 1rem;
+}
+.distance{
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .logo {
+    display: flex;
+    justify-content: start;
+  }
+  .carousel-item {
+    height: 500px;
+    overflow: hidden;
+  }
+  .carousel-item img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+  }
+  .filter-card {
+    width: 400px;
+    gap: 1rem;
+  }
+  .context {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+  .img-return {
+    width: 350px;
+  }
+  p {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .option3 {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  #map {
+    display: none;
+    width: 500px;
+  }
+}
